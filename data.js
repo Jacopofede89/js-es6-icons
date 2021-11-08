@@ -1,3 +1,11 @@
+// Milestone 1
+// Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell’icona e l’icona stessa.
+
+// Milestone 2
+// Ciascuna icona ha una proprietà “color”: utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
+
+// Arrey oggetti
+
 const items = [
 	{
 		name: 'cat',
@@ -113,9 +121,10 @@ const items = [
 	}
 ];
 
+// selezione container
 const containerText = document.querySelector(".container");
 
-
+// Stampa html degli elemnti
 items.forEach((element) => {
     
     containerText.innerHTML += 
@@ -132,3 +141,20 @@ items.forEach((element) => {
     `
 
 });
+
+// Stampa html degli elemnti con filter prova
+// const provo = items.filter((element) => {
+// 	containerText.innerHTML += `
+// 	<div class="card">
+//         <div>
+//         <i class="${element.family} ${element.prefix + element.name} ${element.color}"></i>
+//         </div>
+//          <span>
+//             ${element.name}
+//         </span>   
+        
+// 	</div>
+// `
+
+// });
+// console.log(pio);
